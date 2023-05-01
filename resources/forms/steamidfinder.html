@@ -1,0 +1,21 @@
+<!--.html?q=1234-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Пиво RP - SteamID Finder</title>
+</head>
+<body>
+	<h1>Get Number from URL</h1>
+	<p id="output"></p>
+
+	<script>
+		// Get the value of the "q" parameter from the URL
+		const queryString = window.location.search;
+		const urlParams = new URLSearchParams(queryString);
+		const number = urlParams.get('q');
+
+		// Display the number on the page
+		document.getElementById('output').textContent = number;
+	</script>
+</body>
+</html>
