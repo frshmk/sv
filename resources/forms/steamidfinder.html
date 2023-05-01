@@ -14,7 +14,7 @@
 				<div class="cell right-cell" id="output-cell"></div>
 			</div>
 			<div class="row">
-				<div class="cell left-cell steam-id" data-clipboard-target="#number2-cell">SteamID</div>
+				<div class="cell left-cell steam-id" data-clipboard-target="#number2-cell">SteamID 32</div>
 				<div class="cell right-cell" id="number2-cell"></div>
 			</div>
 			<div class="row">
@@ -61,7 +61,7 @@
 		    const accountID = BigInt(steamid64) - BigInt('76561197960265728');
 		    const accountID_lowbit = BigInt.asUintN(32, accountID);
 		    const accountID_highbit = (accountID >> BigInt(32)) & BigInt(1);
-		    return `STEAM_0:${accountID_highbit}:${accountID_lowbit}`;
+		    return `${accountID_lowbit}`;
 		}
 	</script>
 </body>
