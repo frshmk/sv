@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <title>Пиво RP - Правила</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
+    <button id="toggle-sidebar-btn"></button>
     <div id="page-overlay"></div>
+
     <div id="sidebar">
+
     <a href="https://frshmk.github.io/pivorp/"><h2>Пиво RP</h2></a>
+
+    <a href="#OT">Основные правила</a>
+
       <ul>
+
         <li><a href="#OT">Введение</a></li>
         <li><a href="#NRP">NonRP</a></li>
         <li><a href="#RDM">RDM</a></li>
@@ -20,7 +29,6 @@
         <li><a href="#VA">Voice Abuse</a></li>
         <li><a href="#PA">Prop Abuse</a></li>
         <li><a href="#JA">Job abuse</a></li>
-        <li><a href="#AA">Admin Abuse</a></li>
         <li><a href="#FD">Free Demote</a></li>
         <li><a href="#DA">Door Abuse</a></li>
         <li><a href="#MG">Meta Gaming</a></li>
@@ -28,15 +36,27 @@
         <li><a href="#SK">Spawn Kill</a></li>
         <li><a href="#LR">Leave RP</a></li>
         <li><a href="#LE">Leave</a></li>
-        <li><a href="#PG">Power Gaming</a></li>
+        <li><a href="#PG">PG</a></li>
+
       </ul>
+
+    <a href="#admins">Правила админов</a>
+
+      <ul>
+
+        <li><a href="#admins">Введение</a></li>
+        <li><a href="#AA">AA</a></li>
+
+      </ul>
+    <h1>_</h1>
+
     </div>
     
     <div id="main">
-
+      
       <section id="OT">
-        
-       <h2>Введение</h2>
+      <h1>Основные правила</h1>
+      <h2>Введение</h2>
 
        <p>Незнание правил не освобождает от ответственности</p>
        <p>В случае, если вы считаете администрацию неправой, то можете обратиться к superadmin</p>
@@ -47,11 +67,11 @@
        <p>Администрация решает банить или нет, админ может дать предупреждение</p>
        <p>Во время NonRP time не действуют правила: NonRP, PG, MG, NLR, FRP, VA, DA, CA, AA, PA</p>
        <p>Разрешено всё, что не запрещено</p>
+       <br><br><br>
       </section>
-      <br><br><br>
-
-      <h2>Основные понятия</h2>
-      <br>
+      
+      <h2>Основные понятия<br></h2>
+      
 
       <section id="NRP">
        <p><b>Non Role Play: </b>Неправильная отыгровка/абсолютная неотыгровка своей роли. <b>[Наказание - BAN 30mi]</b></p>
@@ -70,11 +90,6 @@
 
       <section id="NLR">
         <p><b>New Life Rule: </b>После смерти вы забываете всё, что как-либо связано с вашей смертью. Запрещено возвращаться на место смерти кд 3мин. <b>[Наказание - BAN 30mi]</b></p>
-        <br><br><br>
-      </section>
-
-      <section id="AA">
-        <p><b>Admin Abuse: </b>Запрещено использовать административные права в своих целях. <b>[Наказание - warn]</b></p>
         <br><br><br>
       </section>
 
@@ -146,3 +161,30 @@
         <br><br><br>
       </section>
 
+      <section id="admins">
+      <h1>Правила администрации</h1>
+      <h2>Введение</h2>
+      <p>Админ петух</p>
+       <br><br><br>
+      </section>
+
+      <section id="AA">
+        <p><b>Admin Abuse: </b>Запрещено использовать возможности ранга в своих целях. <b>[Наказание - warn]</b></p>
+        <br><br><br>
+      </section>
+
+
+
+      <script>
+        const sidebar = document.getElementById('sidebar');
+        const toggleBtn = document.getElementById('toggle-sidebar-btn');
+        const body = document.body;
+
+        toggleBtn.addEventListener('click', () => {
+          sidebar.classList.toggle('hidden');
+          body.classList.toggle('sidebar-hidden');
+        });
+
+    </script>
+  </body>
+</html>
