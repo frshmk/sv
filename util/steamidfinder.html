@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exec SV - SteamID Finder</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<p id="output"></p>
+	<div class="button-container">
+		<div class="table">
+			<div class="row">
+				<div class="cell left-cell steam-profile" data-clipboard-target="#output-cell">Steam Profile</div>
+				<div class="cell right-cell" id="output-cell"></div>
+			</div>
+			<div class="row">
+				<div class="cell left-cell steam-id" data-clipboard-target="#steamxyz-cell">SteamID</div>
+				<div class="cell right-cell" id="steamxyz-cell"></div>
+			</div>
+			<div class="row">
+				<div class="cell left-cell steam-id" data-clipboard-target="#number2-cell">SteamID 32</div>
+				<div class="cell right-cell" id="number2-cell"></div>
+			</div>
+			<div class="row">
+				<div class="cell left-cell steam-id" data-clipboard-target="#number-cell">SteamID 64</div>
+				<div class="cell right-cell" id="number-cell"></div>
+			</div>
+		</div>
+	</div>
+	<script>
+		// Get the value of the "q" parameter from the URL
+		const queryString = window.location.search;
+		const urlParams = new URLSearchParams(queryString);
+		const number64 = urlParams.get('q');
+		const number32 = convertSteamID64to32(number64);
+		const steamXYZ = convertSteamID32toXYZ(number32);
+		document.getElementById('steamxyz-cell').textContent = steamXYZ;
+
+
+		// Display the numbers on the page
+		document.getElementById('output').textContent = number64;
+		document.getElementById('output-cell').textContent = "https://steamcommunity.com/profiles/" + number64;
+		document.getElementById('number-cell').textContent = number64;
+		document.getElementById('number2-cell').textContent = number32;
+
+		// Add event listener to all left cells for copying
+		const leftCells = document.querySelectorAll('.left-cell');
+		leftCells.forEach(function(leftCell) {
+			const oldname = leftCell.textContent;
+			leftCell.addEventListener('click', function() {
+				const clipboardText = document.querySelector(leftCell.dataset.clipboardTarget).textContent;
+				navigator.clipboard.writeText(clipboardText);
+				leftCell.textContent = 'Скопировано.';
+				setTimeout(function() {
+					leftCell.textContent = oldname;
+				}, 2000);
+			});
+		});
+
+		// Add event listener to right cell for redirecting to Steam profile URL
+		const rightCell = document.querySelector('.right-cell');
+		rightCell.addEventListener('click', function() {
+			window.location.href = 'https://steamcommunity.com/profiles/' + number64;
+		});
+
+		// Function to convert SteamID64 to SteamID32
+		function convertSteamID64to32(steamid64) {
+		    const accountID = BigInt(steamid64) - BigInt('76561197960265728');
+		    const accountID_lowbit = BigInt.asUintN(32, accountID);
+		    const accountID_highbit = (accountID >> BigInt(32)) & BigInt(1);
+		    return `${accountID_lowbit}`;
+		}
+		function convertSteamID32toXYZ(steamid32) {
+		    const steamCommunityID = BigInt(steamid32) + BigInt('76561197960265728');
+		    const z = (steamCommunityID / BigInt(2)) % BigInt(Math.pow(2, 31));
+		    const y = steamCommunityID % BigInt(2);
+		    const x = (steamCommunityID / BigInt(Math.pow(2, 31))) % BigInt(2);
+		    return `STEAM_${x}:${y}:${z}`;
+		}
+	</script>
+</body>
+</html>
