@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exec SCP SL - Подключение</title>
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      h1 {
+        font-size: 4em;
+        margin-top: 0;
+        color: white;
+        cursor: pointer; /* Change cursor to pointer on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>185.68.22.179:1488</h1>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var h1Element = document.querySelector('h1');
+        var originalText = h1Element.textContent;
+
+        h1Element.addEventListener('click', function() {
+          navigator.clipboard.writeText(originalText);
+          h1Element.textContent = 'Скопировано.';
+          setTimeout(function() {
+            h1Element.textContent = originalText;
+          }, 2000);
+        });
+      });
+    </script>
+  </body>
+</html>
