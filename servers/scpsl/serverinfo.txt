@@ -3,4 +3,4 @@
  
  
  
-<align="center"><size=20><b><color=#2fae4f>Exec</color></b> - это No Rules сервер для игроков из СНГ. Обязательно зайди в наш <color=#a569bd><u><link="https://frshmk.github.io/sv/discord">Discord</link></u></color></size></align>
+<align="center"><size=20><b><color=#2fae4f>Exec</color></b> - это No Rules сервер для игроков из СНГ. Обязательно зайди в наш <color=#a569bd><u><link="https://frshmk.github.io/sv/discord">Discord</link></u></color></size> <size=5><= нажми</size></align>
