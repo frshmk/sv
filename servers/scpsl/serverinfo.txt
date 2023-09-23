@@ -8,4 +8,4 @@
 
 
 <align="center"><size=20><color=#2fae4f><link="https://frshmk.github.io/sv/discord">https://discord.com</link></color></size></align>
-<align="center"><size=5>Нажми на ссылку чтобы открыть приглашение</size></align>
+<align="center"><size=10>Нажми на ссылку чтобы открыть приглашение</size></align>
