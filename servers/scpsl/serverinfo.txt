@@ -1,11 +1,11 @@
 <align="center"><size=40><b><color=#2fae4f>Exec</color></b></size></align>
-<align="center"><size=15>powered by ГУ МВД России по г. Москве</size></align>
+<align="center"><size=15>powered by Exec Servers</size></align>
  
  
  
-<align="center"><size=20><b><color=#2fae4f>Exec</color></b> - это No Rules сервер для игроков из СНГ. Во время игры на этом сервере ты можешь столкнуться с обсценной лексикой и материалами для лиц старше 18 лет. Не забудь зайти в наш <color=#2fae4f><link="https://frshmk.github.io/sv/discord">Discord</link></color>.</size></align>
+<align="center"><size=20><b><color=#2fae4f>Exec</color></b> - это No Rules сервер для игроков из СНГ. Во время игры на этом сервере ты можешь столкнуться с обсценной лексикой и материалами для лиц старше 18 лет. Не забудь зайти в наш <color=#2fae4f><link="https://execservers.online/discord">Discord</link></color>.</size></align>
 
 
 
-<align="center"><size=20><color=#2fae4f><link="https://frshmk.github.io/sv/discord">https://discord.com</link></color></size></align>
+<align="center"><size=20><color=#2fae4f><link="https://execservers.online/discord">https://execservers.online</link></color></size></align>
 <align="center"><size=10>Нажми на ссылку чтобы открыть приглашение</size></align>
