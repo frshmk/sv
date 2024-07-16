@@ -3,9 +3,9 @@
  
  
  
-<align="center"><size=20><b><color=#2fae4f>Exec</color></b> - это No Rules сервер для игроков из СНГ. Во время игры на этом сервере ты можешь столкнуться с обсценной лексикой и материалами для лиц старше 18 лет. Не забудь зайти в наш <color=#2fae4f><link="https://execservers.online/discord">Discord</link></color>.</size></align>
+<align="center"><size=20><b><color=#2fae4f>Exec</color></b> - это No Rules сервер (без правил) для игроков из СНГ. Во время игры на этом сервере ты можешь столкнуться с обсценной лексикой и материалами для лиц старше 18 лет. Не забудь зайти в наш <color=#2fae4f><link="https://execservers.online/discord">Discord</link></color>.</size></align>
 
 
 
-<align="center"><size=20><color=#2fae4f><link="https://execservers.online/discord">https://execservers.online</link></color></size></align>
+<align="center"><size=20><color=#2fae4f><link="https://execservers.online/discord">https://execservers.online/discord</link></color></size></align>
 <align="center"><size=10>Нажми на ссылку чтобы открыть приглашение</size></align>
